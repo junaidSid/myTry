@@ -1,0 +1,80 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    padding:0;
+    margin:0;
+    display: flex;
+    font-size: 18pt;
+    width:100vw;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container{
+    width:800px;
+    max-width: 80%;
+    background-color: #4d300a;
+    border-radius:15px ;
+    padding: 10px;
+}
+
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 6px;
+    padding: 10px;
+    background-color: #4d300a;
+    ;
+}
+
+.btn{
+    font-size: 16pt;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(133, 131, 128);
+    border-radius: 3px;
+    padding: 5px 10px;
+    transition: .2s;
+}
+
+.start, .next{
+    font-size:36pt;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.control{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    transition: 0.5s;
+    display:none;    
+}
+.question{
+    color:white;
+}
+.btn:hover{
+    background-color: white;
+    transition: .3s;
+}
+.next-btn,.start-btn{
+    background-color: yellow;
+}
+.btn.correct{
+    background: greenyellow;
+    transition: .2s;
+}
+.btn.wrong{
+    background: red;
+    color:white;
+    transition:.2s;
+}
